@@ -54,7 +54,7 @@ spring:
         - id: servicio-usuarios
           uri: lb://servicio-usuarios
           predicates:
-            - Path=/api/security/**
+            - Path=/api/usuarios/**
           filters:
             - StripPrefix=2
             
